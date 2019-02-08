@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ "x$1" = "x" ]; then
+         cd /home/pi/iptv/epg2xml
+         /usr/bin/python epg2xml.py
+    exit 0
+fi
+
+case "$1" in
+    --description)
+    echo "SK BroadBand grabber"
+    ;;
+    --version)
+    echo "1.0"
+    ;;
+    --capabilities)
+    echo "baseline"
+    ;;
+esac
+
