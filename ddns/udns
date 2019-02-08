@@ -1,0 +1,3 @@
+#!/bin/bash
+# Script for dyndns
+noipy -n prugiotv.dvrdns.org --provider dyn
